@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="gallee.css">
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<div id="div1" class="fa"></div>
+
+   <center><h1 style="font-family:verdana;"> My Gallery </h1></center>
+
+<div style="text-align: center;">
+   <a href="#scenery"> Scenery </a> |
+   <a href="#food"> Food </a> |
+   <a href="#art"> Art </a> |
+   <a href="#cat"> Cat </a> 
+</div>
+
+
+   <center><h2 id="scenery" style="font-family:verdana;"> Scenery Gallery </h2></center>
+
+<div style="text-align:center"> 
+   <button onclick="playPause1()">Play/Pause</button> 
+   <br>
+   <video id="video1" style="
+          display: block;
+          margin: 20px auto;
+          border-radius: 20px;
+          box-shadow:
+            15px 15px 16px #4D7072;
+       ">
+    <source src="sceney.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+function playPause1() { 
+  var myVideo = document.getElementById("video1"); 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+</script>
+
+
+   <center><h2 id="food" style="font-family:verdana;"> Food Gallery </h2></center>
+
+<div style="text-align:center"> 
+  <button onclick="playPause2()">Play/Pause</button> 
+  <br>
+  <video id="video2" style="
+          display: block;
+          margin: 20px auto;
+          border-radius: 20px;
+          box-shadow:
+            15px 15px 16px #5F8486;
+       ">
+    <source src="foody.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+function playPause2() { 
+  var myVideo = document.getElementById("video2"); 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+</script>
+
+
+  <center><h2 id="art" style="font-family:verdana;"> Art Gallery </h2></center>
+
+<div style="text-align:center"> 
+  <button onclick="playPause3()">Play/Pause</button> 
+  <br>
+  <video id="video3" style="
+          display: block;
+          margin: 20px auto;
+          border-radius: 20px;
+          box-shadow:
+            15px 15px 16px #ECB3C1;
+       ">
+    <source src="artey.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+function playPause3() { 
+  var myVideo = document.getElementById("video3"); 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+</script>
+
+
+  <center><h2 id="cat" style="font-family:verdana;"> Cat Gallery </h2></center>
+
+<div style="text-align:center"> 
+  <button onclick="playPause4()">Play/Pause</button> 
+  <br>
+  <video id="video4" style="
+          display: block;
+          margin: 20px auto;
+          border-radius: 20px;
+          box-shadow:
+            15px 15px 16px #C8627D;
+       ">
+    <source src="caty.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+function playPause4() { 
+  var myVideo = document.getElementById("video4"); 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+</script>
+
+
+<script>
+function ratestar() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf006;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf123;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf005;";
+    }, 2000);
+}
+ratestar();
+setInterval(ratestar, 3000);
+</script>
+
+
+<div style="margin-top: 200px;">
+  <p style="text-align: left; font-weight: bold; margin: 0;"> Disclaimer: </p>
+  <p style="text-align: left; margin: 0;">
+  © 2025 Nur Damia Aleya Binti Muhammad Ibrahim. This website is for educational purposes only. <br>
+  For best viewing experience, use Google Chrome | 1366 x 768 resolution | last updated: 25 June 2025 <br>
+  The Universiti Teknologi MARA (UiTM) logo is the property of UiTM and is used here for non-commercial purposes. <br>
+  All other media elements like artwork and pictures are original works by the website owner and may not be used without permission. <br>
+  </p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
